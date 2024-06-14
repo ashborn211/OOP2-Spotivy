@@ -44,6 +44,8 @@ public class SongList
         songs.Add(new Song("Sweet Child o' Mine", "Guns N' Roses", "Appetite for Destruction"));
         songs.Add(new Song("Rolling in the Deep", "Adele", "21"));
         songs.Add(new Song("Purple Rain", "Prince", "Purple Rain"));
+        songs.Add(new Song("Het is een nacht", "Guus Meeuwis", "Verbazing"));
+        songs.Add(new Song("Hey brother", "Avicii", "True"));
     }
 
     public List<Song> GetAllSongs()
