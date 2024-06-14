@@ -7,6 +7,8 @@ namespace OOP2_Spotivy
         static void Main()
         {
             bool exit = false;
+            SongList songList = new SongList();
+            ShowAllSongs showAllSongs = new ShowAllSongs(songList);
 
             while (!exit)
             {
@@ -24,16 +26,22 @@ namespace OOP2_Spotivy
                 switch (choice)
                 {
                     case "1":
+                        showAllSongs.DisplayAllSongs();
                         break;
                     case "2":
+                        // Implement view all albums
                         break;
                     case "3":
+                        // Implement view all artists
                         break;
                     case "4":
+                        // Implement create a playlist
                         break;
                     case "5":
+                        // Implement view your playlists
                         break;
                     case "6":
+                        // Implement view friends
                         break;
                     case "7":
                         Console.WriteLine("Closing program...");
