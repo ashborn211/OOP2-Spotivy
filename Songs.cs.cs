@@ -46,6 +46,7 @@ public class SongList
         songs.Add(new Song("Purple Rain", "Prince", "Purple Rain"));
         songs.Add(new Song("Het is een nacht", "Guus Meeuwis", "Verbazing"));
         songs.Add(new Song("Hey brother", "Avicii", "True"));
+        songs.Add(new Song("Zij gelooft in mij", "Andre Hazes", "De Hazes 100"));
     }
 
     public List<Song> GetAllSongs()
