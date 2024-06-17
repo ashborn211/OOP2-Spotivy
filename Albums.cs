@@ -1,123 +1,136 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
+using static OOP2_Spotivy.Songs;
 
-using System;
-using System.Collections.Generic;
-
-public class Album
+namespace OOP2_Spotivy
 {
-    public string Title { get; set; }
-    public List<string> Artists { get; set; }
-    public int NumberOfSongs { get; set; }
-    public List<Song> Songs { get; set; }
-
-    public Album(string title, List<string> artists, int numberOfSongs, List<Song> songs)
+    internal class Albums
     {
-        Title = title;
-        Artists = artists;
-        NumberOfSongs = numberOfSongs;
-        Songs = songs;
-    }
-}
-
-public static class Albums
-{
-    public static List<Album> GetAllAlbums()
-    {
-        List<Album> albums = new List<Album>
+        internal class Album
         {
-            new Album("A Night at the Opera", new List<string>{"Queen"}, 1, new List<Song>
-            {
-                new Song(1, "Bohemian Rhapsody", "pop", "Queen", "A Night at the Opera", 5.9)
-            }),
-            new Album("Hotel California", new List<string>{"Eagles"}, 1, new List<Song>
-            {
-                new Song(2, "Hotel California", "pop", "Eagles", "Hotel California", 6.51)
-            }),
-            new Album("Led Zeppelin IV", new List<string>{"Led Zeppelin"}, 1, new List<Song>
-            {
-                new Song(3, "Stairway to Heaven", "pop", "Led Zeppelin", "Led Zeppelin IV", 8.03)
-            }),
-            new Album("Imagine", new List<string>{"John Lennon"}, 1, new List<Song>
-            {
-                new Song(4, "Imagine", "pop", "John Lennon", "Imagine", 3.11)
-            }),
-            new Album("Hey Jude", new List<string>{"The Beatles"}, 1, new List<Song>
-            {
-                new Song(5, "Hey Jude", "pop", "The Beatles", "Hey Jude", 3.93)
-            }),
-            new Album("Highway 61 Revisited", new List<string>{"Bob Dylan"}, 1, new List<Song>
-            {
-                new Song(6, "Like a Rolling Stone", "pop", "Bob Dylan", "Highway 61 Revisited", 3.4)
-            }),
-            new Album("Let It Be", new List<string>{"The Beatles"}, 1, new List<Song>
-            {
-                new Song(7, "Let It Be", "pop", "The Beatles", "Let It Be", 4.05)
-            }),
-            new Album("Nevermind", new List<string>{"Nirvana"}, 1, new List<Song>
-            {
-                new Song(8, "Smells Like Teen Spirit", "pop", "Nirvana", "Nevermind", 1.0)
-            }),
-            new Album("Thriller", new List<string>{"Michael Jackson"}, 1, new List<Song>
-            {
-                new Song(9, "Billie Jean", "pop", "Michael Jackson", "Thriller", 1.0)
-            }),
-            new Album("Help!", new List<string>{"The Beatles"}, 1, new List<Song>
-            {
-                new Song(10, "Yesterday", "pop", "The Beatles", "Help!", 1.0)
-            }),
-            new Album("Born to Run", new List<string>{"Bruce Springsteen"}, 1, new List<Song>
-            {
-                new Song(11, "Born to Run", "pop", "Bruce Springsteen", "Born to Run", 1.0)
-            }),
-            new Album("Grace", new List<string>{"Jeff Buckley"}, 1, new List<Song>
-            {
-                new Song(12, "Hallelujah", "pop", "Jeff Buckley", "Grace", 1.0)
-            }),
-            new Album("Appetite for Destruction", new List<string>{"Guns N' Roses"}, 1, new List<Song>
-            {
-                new Song(13, "Sweet Child o' Mine", "pop", "Guns N' Roses", "Appetite for Destruction", 1.0)
-            }),
-            new Album("21", new List<string>{"Adele"}, 1, new List<Song>
-            {
-                new Song(14, "Rolling in the Deep", "pop", "Adele", "21", 1.0)
-            }),
-            new Album("Purple Rain", new List<string>{"Prince"}, 1, new List<Song>
-            {
-                new Song(15, "Purple Rain", "pop", "Prince", "Purple Rain", 1.0)
-            }),
-            new Album("Verbazing", new List<string>{"Guus Meeuwis"}, 1, new List<Song>
-            {
-                new Song(16, "Het is een nacht", "pop", "Guus Meeuwis", "Verbazing", 1.0)
-            }),
-            new Album("True", new List<string>{"Avicii"}, 1, new List<Song>
-            {
-                new Song(17, "Hey brother", "pop", "Avicii", "True", 1.0)
-            }),
-            new Album("De Hazes 100", new List<string>{"Andre Hazes"}, 1, new List<Song>
-            {
-                new Song(18, "Zij gelooft in mij", "pop", "Andre Hazes", "De Hazes 100", 1.0)
-            }),
-        };
-        return albums;
-    }
+            public string Title { get; set; }
+            public List<string> Artists { get; set; }
+            public int NumberOfSongs { get; set; }
+            public List<Song> Songs { get; set; }
 
-    public static void ShowAllAlbums()
-    {
-        List<Album> albums = GetAllAlbums();
-        Console.WriteLine("All Albums:");
-        foreach (Album album in albums)
-        {
-            Console.WriteLine($"Title: {album.Title}");
-            Console.WriteLine($"Artists: {string.Join(", ", album.Artists)}");
-            Console.WriteLine($"Number of Songs: {album.NumberOfSongs}");
-            Console.WriteLine("Songs:");
-            foreach (Song song in album.Songs)
+            public Album(string title, List<string> artists, List<Song> songs)
             {
-                Console.WriteLine($"- Title: {song.Title}, Artist: {song.Artist}");
+                Title = title;
+                Artists = artists;
+                NumberOfSongs = songs.Count;
+                Songs = songs;
             }
-            Console.WriteLine();
+        }
+
+        internal static class AlbumLibrary
+        {
+            private static List<Album> albums;
+
+            static AlbumLibrary()
+            {
+                albums = new List<Album>();
+                LoadAlbums();
+            }
+
+            private static void LoadAlbums()
+            {
+                albums.Add(new Album("A Night at the Opera", new List<string> { "Queen" }, new List<Song>
+    {
+        new Song(1, "Bohemian Rhapsody", "pop", 5.9, new List<string>{"Queen"}, 1975, "...")
+    }));
+                albums.Add(new Album("Hotel California", new List<string> { "Eagles" }, new List<Song>
+    {
+        new Song(2, "Hotel California", "pop", 6.51, new List<string>{"Eagles"}, 1976, "...")
+    }));
+                albums.Add(new Album("Led Zeppelin IV", new List<string> { "Led Zeppelin" }, new List<Song>
+    {
+        new Song(3, "Stairway to Heaven", "pop", 8.03, new List<string>{"Led Zeppelin"}, 1971, "...")
+    }));
+                albums.Add(new Album("Imagine", new List<string> { "John Lennon" }, new List<Song>
+    {
+        new Song(4, "Imagine", "pop", 3.11, new List<string>{"John Lennon"}, 1971, "...")
+    }));
+                albums.Add(new Album("Hey Jude", new List<string> { "The Beatles" }, new List<Song>
+    {
+        new Song(5, "Hey Jude", "pop", 3.93, new List<string>{"The Beatles"}, 1968, "...")
+    }));
+                albums.Add(new Album("Like a Rolling Stone", new List<string> { "Bob Dylan" }, new List<Song>
+    {
+        new Song(6, "Like a Rolling Stone", "pop", 3.4, new List<string>{"Bob Dylan"}, 1965, "...")
+    }));
+                albums.Add(new Album("Let It Be", new List<string> { "The Beatles" }, new List<Song>
+    {
+        new Song(7, "Let It Be", "pop", 4.05, new List<string>{"The Beatles"}, 1970, "...")
+    }));
+                albums.Add(new Album("Smells Like Teen Spirit", new List<string> { "Nirvana" }, new List<Song>
+    {
+        new Song(8, "Smells Like Teen Spirit", "pop", 1.0, new List<string>{"Nirvana"}, 1991, "...")
+    }));
+                albums.Add(new Album("Billie Jean", new List<string> { "Michael Jackson" }, new List<Song>
+    {
+        new Song(9, "Billie Jean", "pop", 1.0, new List<string>{"Michael Jackson"}, 1982, "...")
+    }));
+                albums.Add(new Album("Yesterday", new List<string> { "The Beatles" }, new List<Song>
+    {
+        new Song(10, "Yesterday", "pop", 1.0, new List<string>{"The Beatles"}, 1965, "...")
+    }));
+                albums.Add(new Album("Born to Run", new List<string> { "Bruce Springsteen" }, new List<Song>
+    {
+        new Song(11, "Born to Run", "pop", 1.0, new List<string>{"Bruce Springsteen"}, 1975, "...")
+    }));
+                albums.Add(new Album("Hallelujah", new List<string> { "Jeff Buckley" }, new List<Song>
+    {
+        new Song(12, "Hallelujah", "pop", 1.0, new List<string>{"Jeff Buckley"}, 1994, "...")
+    }));
+                albums.Add(new Album("Sweet Child o' Mine", new List<string> { "Guns N' Roses" }, new List<Song>
+    {
+        new Song(13, "Sweet Child o' Mine", "pop", 1.0, new List<string>{"Guns N' Roses"}, 1987, "...")
+    }));
+                albums.Add(new Album("Rolling in the Deep", new List<string> { "Adele" }, new List<Song>
+    {
+        new Song(14, "Rolling in the Deep", "pop", 1.0, new List<string>{"Adele"}, 2010, "...")
+    }));
+                albums.Add(new Album("Purple Rain", new List<string> { "Prince" }, new List<Song>
+    {
+        new Song(15, "Purple Rain", "pop", 1.0, new List<string>{"Prince"}, 1984, "...")
+    }));
+                albums.Add(new Album("Het is een nacht", new List<string> { "Guus Meeuwis" }, new List<Song>
+    {
+        new Song(16, "Het is een nacht", "pop", 1.0, new List<string>{"Guus Meeuwis"}, 1995, "...")
+    }));
+                albums.Add(new Album("Hey brother", new List<string> { "Avicii" }, new List<Song>
+    {
+        new Song(17, "Hey brother", "pop", 1.0, new List<string>{"Avicii"}, 2013, "...")
+    }));
+                albums.Add(new Album("Zij gelooft in mij", new List<string> { "Andre Hazes" }, new List<Song>
+    {
+        new Song(18, "Zij gelooft in mij", "pop", 1.0, new List<string>{"Andre Hazes"}, 1998, "...")
+    }));
+            }
+
+
+            public static List<Album> GetAllAlbums()
+            {
+                return albums;
+            }
+
+            public static void ShowAllAlbums()
+            {
+                List<Album> albums = GetAllAlbums();
+                Console.WriteLine("All Albums:");
+                foreach (Album album in albums)
+                {
+                    Console.WriteLine($"Title: {album.Title}");
+                    Console.WriteLine($"Artists: {string.Join(", ", album.Artists)}");
+                    Console.WriteLine($"Number of Songs: {album.NumberOfSongs}");
+                    Console.WriteLine("Songs:");
+                    foreach (Song song in album.Songs)
+                    {
+                        Console.WriteLine($"- Title: {song.Title}");
+                    }
+                    Console.WriteLine();
+                }
+            }
         }
     }
 }

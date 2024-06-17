@@ -1,4 +1,6 @@
 ﻿using System;
+using static OOP2_Spotivy.Albums;
+using static OOP2_Spotivy.Songs;
 
 namespace OOP2_Spotivy
 {
@@ -28,7 +30,7 @@ namespace OOP2_Spotivy
                         showAllSongs.DisplayAllSongs();
                         break;
                     case "2":
-                        Albums.ShowAllAlbums();
+                        AlbumLibrary.ShowAllAlbums();
                         break;
                     case "3":
                         // Implement view all artists
