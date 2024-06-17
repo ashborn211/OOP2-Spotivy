@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{98CF748B-0D08-414B-8A53-82A0C30825DA}|OOP2-Spotivy.csproj|c:\\users\\velic\\onedrive\\documenten\\oop2-spotivy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98CF748B-0D08-414B-8A53-82A0C30825DA}|OOP2-Spotivy.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98CF748B-0D08-414B-8A53-82A0C30825DA}|OOP2-Spotivy.csproj|c:\\users\\velic\\onedrive\\documenten\\oop2-spotivy\\songs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98CF748B-0D08-414B-8A53-82A0C30825DA}|OOP2-Spotivy.csproj|solutionrelative:songs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98CF748B-0D08-414B-8A53-82A0C30825DA}|OOP2-Spotivy.csproj|c:\\users\\velic\\onedrive\\documenten\\oop2-spotivy\\albums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98CF748B-0D08-414B-8A53-82A0C30825DA}|OOP2-Spotivy.csproj|solutionrelative:albums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +22,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Albums.cs",
+              "DocumentMoniker": "C:\\Users\\velic\\OneDrive\\Documenten\\OOP2-Spotivy\\Albums.cs",
+              "RelativeDocumentMoniker": "Albums.cs",
+              "ToolTip": "C:\\Users\\velic\\OneDrive\\Documenten\\OOP2-Spotivy\\Albums.cs",
+              "RelativeToolTip": "Albums.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T12:23:18.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Songs.cs",
+              "DocumentMoniker": "C:\\Users\\velic\\OneDrive\\Documenten\\OOP2-Spotivy\\Songs.cs",
+              "RelativeDocumentMoniker": "Songs.cs",
+              "ToolTip": "C:\\Users\\velic\\OneDrive\\Documenten\\OOP2-Spotivy\\Songs.cs",
+              "RelativeToolTip": "Songs.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAuwDwAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T12:22:58.884Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -28,7 +62,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\velic\\OneDrive\\Documenten\\OOP2-Spotivy\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAfAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-13T13:56:36.619Z",
               "EditorCaption": ""

@@ -9,7 +9,6 @@ namespace OOP2_Spotivy
             bool exit = false;
             SongList songList = new SongList();
             ShowAllSongs showAllSongs = new ShowAllSongs(songList);
-
             while (!exit)
             {
                 Console.WriteLine("Menu:");
@@ -29,7 +28,7 @@ namespace OOP2_Spotivy
                         showAllSongs.DisplayAllSongs();
                         break;
                     case "2":
-                        // Implement view all albums
+                        Albums.ShowAllAlbums();
                         break;
                     case "3":
                         // Implement view all artists
