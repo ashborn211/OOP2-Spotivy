@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using static OOP2_Spotivy.Songs;
 
 namespace OOP2_Spotivy
 {

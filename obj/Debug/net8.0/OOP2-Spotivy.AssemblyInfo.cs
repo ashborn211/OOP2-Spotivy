@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OOP2-Spotivy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+177a59fd90419272af4246e3219e0ae33478f4a8")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2fb36bfaa0ff37ffdd5dcb048930f89bc78d534d")]
->>>>>>> song
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebcf349b6da14ecf0dc3241e55af5a06b3e7dcef")]
 [assembly: System.Reflection.AssemblyProductAttribute("OOP2-Spotivy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OOP2-Spotivy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
