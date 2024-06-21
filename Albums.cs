@@ -3,9 +3,7 @@ using System.Collections.Generic;
 
 namespace OOP2_Spotivy
 {
-    internal class Albums
-    {
-        internal class Album
+        public class Album
         {
             public string Title { get; set; }
             public List<string> Artists { get; set; }
@@ -131,4 +129,3 @@ namespace OOP2_Spotivy
             }
         }
     }
-}

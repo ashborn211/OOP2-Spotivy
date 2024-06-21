@@ -1,5 +1,4 @@
 ﻿using System;
-using static OOP2_Spotivy.Albums;
 
 namespace OOP2_Spotivy
 {
@@ -32,7 +31,7 @@ namespace OOP2_Spotivy
                         AlbumLibrary.ShowAllAlbums();
                         break;
                     case "3":
-                        // Implement view all artists
+                        ArtistLibrary.ShowAllArtists();
                         break;
                     case "4":
                         // Implement create a playlist
