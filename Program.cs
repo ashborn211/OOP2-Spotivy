@@ -31,7 +31,20 @@ namespace OOP2_Spotivy
                         AlbumLibrary.ShowAllAlbums();
                         break;
                     case "3":
-                        ArtistLibrary.ShowAllArtists();
+                        Console.WriteLine("1 for all artist 2 for search arist");
+                        string choice2 = Console.ReadLine();
+                        if (choice2 == "1")
+                        {
+                            ArtistLibrary.ShowAllArtists();
+                        }
+                        else if (choice2 == "2")
+                        {
+                            ArtistLibrary.ShowArtist();
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid option, please try again.");
+                        }
                         break;
                     case "4":
                         // Implement create a playlist

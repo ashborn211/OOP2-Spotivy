@@ -51,4 +51,20 @@ internal class ArtistLibrary
             Console.WriteLine($"Name: {artist.Name}, Genre: {artist.Genre}");
         }
     }
+    public static void ShowArtist()
+    {
+        Console.Write("Enter the name of the artist to search for: ");
+        string artistName = Console.ReadLine();
+
+        Console.WriteLine($"Searching for artist: {artistName}");
+        var foundArtist = artists.Find(artist => artist.Name.Equals(artistName, StringComparison.OrdinalIgnoreCase));
+        if (foundArtist != null)
+        {
+            Console.WriteLine($"Name: {foundArtist.Name}, Genre: {foundArtist.Genre}");
+        }
+        else
+        {
+            Console.WriteLine("Artist not found.");
+        }
+    }
 }
