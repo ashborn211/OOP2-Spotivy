@@ -56,6 +56,9 @@ namespace OOP2_Spotivy
                         // Implement view friends
                         break;
                     case "7":
+                        Console.WriteLine("add a friend");
+                        break;
+                    case "8":
                         Console.WriteLine("Closing program...");
                         exit = true;
                         break;
