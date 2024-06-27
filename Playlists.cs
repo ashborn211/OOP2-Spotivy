@@ -115,7 +115,7 @@ public class Playlist
             foreach (var song in playlist.songs)
             {
                 Console.WriteLine($"Now playing: {song.Title} by {song.Artist}...");
-                System.Threading.Thread.Sleep(song.SongDuration * 1000);
+                System.Threading.Thread.Sleep(10000);
                 Console.WriteLine($"Finished: {song.Title}\n");
             }
         }
