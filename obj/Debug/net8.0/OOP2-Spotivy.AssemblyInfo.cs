@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OOP2-Spotivy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebcf349b6da14ecf0dc3241e55af5a06b3e7dcef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c0dfdfc5209577efc6e7f4e7e6c1942c0bd3592")]
 [assembly: System.Reflection.AssemblyProductAttribute("OOP2-Spotivy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OOP2-Spotivy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
