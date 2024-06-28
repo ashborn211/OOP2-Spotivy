@@ -11,6 +11,17 @@
       "RelativeMoniker": "D:0:0:{98CF748B-0D08-414B-8A53-82A0C30825DA}|OOP2-Spotivy.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
+=======
+      "AbsoluteMoniker": "D:0:0:{98CF748B-0D08-414B-8A53-82A0C30825DA}|OOP2-Spotivy.csproj|c:\\users\\velic\\onedrive\\documenten\\oop2-spotivy\\playlists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98CF748B-0D08-414B-8A53-82A0C30825DA}|OOP2-Spotivy.csproj|solutionrelative:playlists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98CF748B-0D08-414B-8A53-82A0C30825DA}|OOP2-Spotivy.csproj|c:\\users\\velic\\onedrive\\documenten\\oop2-spotivy\\albums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98CF748B-0D08-414B-8A53-82A0C30825DA}|OOP2-Spotivy.csproj|solutionrelative:albums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+>>>>>>> skipNumber
       "AbsoluteMoniker": "D:0:0:{98CF748B-0D08-414B-8A53-82A0C30825DA}|OOP2-Spotivy.csproj|c:\\users\\velic\\onedrive\\documenten\\oop2-spotivy\\artists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98CF748B-0D08-414B-8A53-82A0C30825DA}|OOP2-Spotivy.csproj|solutionrelative:artists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -30,7 +41,24 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
+=======
+              "DocumentIndex": 1,
+              "Title": "Playlists.cs",
+              "DocumentMoniker": "C:\\Users\\velic\\OneDrive\\Documenten\\OOP2-Spotivy\\Playlists.cs",
+              "RelativeDocumentMoniker": "Playlists.cs",
+              "ToolTip": "C:\\Users\\velic\\OneDrive\\Documenten\\OOP2-Spotivy\\Playlists.cs",
+              "RelativeToolTip": "Playlists.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T12:32:30.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+>>>>>>> skipNumber
               "Title": "Artists.cs",
               "DocumentMoniker": "C:\\Users\\velic\\OneDrive\\Documenten\\OOP2-Spotivy\\Artists.cs",
               "RelativeDocumentMoniker": "Artists.cs",
@@ -55,13 +83,21 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 1,
+=======
+              "DocumentIndex": 0,
+>>>>>>> skipNumber
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\velic\\OneDrive\\Documenten\\OOP2-Spotivy\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\velic\\OneDrive\\Documenten\\OOP2-Spotivy\\Program.cs",
               "RelativeToolTip": "Program.cs",
+<<<<<<< HEAD
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAaAAAA",
+=======
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAwCEAAAAxAAAA",
+>>>>>>> skipNumber
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-13T13:56:36.619Z",
               "EditorCaption": ""
