@@ -43,7 +43,7 @@ internal class Program
                     Playlist.PlayPlaylist();
                     break;
                 case "6":
-                    // Implement view friends
+                    Console.WriteLine("friends comin soon...");
                     break;
                 case "7":
                     Console.WriteLine("Closing program...");
