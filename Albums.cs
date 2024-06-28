@@ -10,6 +10,7 @@ namespace OOP2_Spotivy
         public string Genre { get; set; }
         public List<string> Songs { get; set; }
 
+
         public Album(string title, List<string> artists, string genre, List<string> songs)
         {
             Title = title;
